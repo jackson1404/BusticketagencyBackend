@@ -2,9 +2,6 @@ package com.mmbusticket.agencysystem.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import lombok.AllArgsConstructor;
-
-@AllArgsConstructor
 public class SeatUpdate {
 	
 	@JsonProperty("scheduleId")
@@ -25,8 +22,8 @@ public class SeatUpdate {
 	public void setSeatNumber(String seatNumber) {
 		this.seatNumber = seatNumber;
 	}
+	
 	public SeatUpdate(Long scheduleId, String seatNumber) {
-		super();
 		this.scheduleId = scheduleId;
 		this.seatNumber = seatNumber;
 	}

@@ -34,8 +34,8 @@ public class SeatSelectionRequest {
 	public void setAction(String action) {
 		this.action = action;
 	}
+	
 	public SeatSelectionRequest(Long scheduleId, String seatNumber, String action) {
-		super();
 		this.scheduleId = scheduleId;
 		this.seatNumber = seatNumber;
 		this.action = action;
